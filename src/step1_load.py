@@ -12,9 +12,9 @@ def load_images(path1, path2):
     if img2_color is None:
         raise FileNotFoundError(f"could not load image: {path2}")
     
-    img1_gray = cv2.cvtColor(img1_color, cv2.COLOR_BAYER_BG2GRAY) #cv2.cvtColor converts an image from one color space to another (BGR to Grayscale here)
+    img1_gray = cv2.cvtColor(img1_color, cv2.COLOR_BGR2GRAY) #cv2.cvtColor converts an image from one color space to another (BGR to Grayscale here)
     #ORB works on brighness values, not color so we use grayscale here. This is faster to process and color doesn't help find corners or grades. 
-    img2_gray  =cv2.cvtColor(img2_color, cv2.COLOR_BAYER_BG2GRAY)
+    img2_gray  =cv2.cvtColor(img2_color, cv2.COLOR_BGR2GRAY)
 
 
     print(f"img1 shape: {img1_color.shape}") #.shape returns dimension of the array as a tuple
