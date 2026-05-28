@@ -51,8 +51,8 @@ i read the 2026 IEEE JSTARS paper by Prof. Haiyang Chao's lab at KU on mapping w
 **1. clone the repo**
 
 ```bash
-git clone https://github.com/[your-username]/image-registration
-cd image-registration
+git clone https://github.com/rijulpoudel/image_registration_pipeline
+cd image_registration_pipeline
 ```
 
 **2. set up virtual environment**
