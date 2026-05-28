@@ -18,7 +18,7 @@ load images → detect keypoints (ORB) → match keypoints (BFMatcher) → filte
 
 ## why i built this
 
-i read the 2026 IEEE JSTARS paper by Prof. Haiyang Chao's lab at KU on mapping wildfire perimeters using UAS thermal imagery. their pipeline registers orthomaps to a base map using feature matching — the exact same technique this project implements. wanted to understand it hands-on before anything else.
+i read the 2026 IEEE JSTARS paper by Prof. Haiyang Chao's lab at KU on mapping wildfire perimeters using UAS thermal imagery. their pipeline registers orthomaps to a base map using feature matching, the exact same technique this project implements. wanted to understand it hands-on before anything else.
 
 ---
 
