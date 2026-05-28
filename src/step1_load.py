@@ -20,6 +20,12 @@ def load_images(path1, path2):
     print(f"img1 shape: {img1_color.shape}") #.shape returns dimension of the array as a tuple
     print(f"img2 shape: {img2_color.shape}")    
 
+    img1_color = cv2.resize(img1_color, (1080, 1440))  # <-- add here
+    img2_color = cv2.resize(img2_color, (1080, 1440))
+    img1_gray = cv2.resize(img1_gray, (1080, 1440))
+    img2_gray = cv2.resize(img2_gray, (1080, 1440))
+
+
     return img1_color, img2_color, img1_gray, img2_gray
 
 

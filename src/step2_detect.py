@@ -1,9 +1,8 @@
 import cv2
 import matplotlib.pyplot as plt
 import matplotlib
-matplotlib.use("Agg")
 []
-def detect_keypoints(img1_gray, img2_gray, n_features=2000):
+def detect_keypoints(img1_gray, img2_gray, n_features=5000):
     orb = cv2.ORB_create(nfeatures=n_features) 
     # the max number of keypoints it is allowed to find per image is n_features
     #the higher the number of keypoints, more the potential matches but slower
